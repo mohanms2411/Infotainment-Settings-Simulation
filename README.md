@@ -4,10 +4,10 @@ This C++ project simulates a basic settings module of a car infotainment system.
 
 ## ⚙️ Features
 
-- View current settings (language, brightness, volume)
+- View current settings (Language, Brightness, Volume)
 - Modify any setting
-- Save settings to a file (`settings.txt`)
-- Load settings from a file
+- Save/load settings from a file (`settings.txt`)
+- Simple and clean console interface
 
 ## 🧠 Concepts Used
 
@@ -20,3 +20,10 @@ This C++ project simulates a basic settings module of a car infotainment system.
 ```bash
 g++ main.cpp SettingsManager.cpp -o settings
 ./settings
+
+## 📁 Project Structure
+Infotainment-Settings-Simulation/
+├── main.cpp
+├── SettingsManager.hpp
+├── SettingsManager.cpp
+└── README.md
