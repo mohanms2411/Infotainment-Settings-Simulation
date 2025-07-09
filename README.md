@@ -20,3 +20,10 @@ This C++ project simulates a basic settings module of a car infotainment system.
 ```bash
 g++ main.cpp SettingsManager.cpp -o settings
 ./settings
+
+## 📁 Project Structure
+Infotainment-Settings-Simulation/
+├── main.cpp
+├── SettingsManager.hpp
+├── SettingsManager.cpp
+└── README.md
