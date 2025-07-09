@@ -12,7 +12,7 @@ This C++ project simulates a basic settings module of a car infotainment system.
 ## 🧠 Concepts Used
 
 - C++ OOP (Classes, Encapsulation)
-- STL (`std::map`).
+- STL (`std::map`)
 - File handling (`ifstream`, `ofstream`)
 
 ## 🧪 How to Run
