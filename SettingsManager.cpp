@@ -1,5 +1,6 @@
 #include "SettingsManager.hpp"
 #include <iostream>
+#include<algorithm>
 #include <fstream>
 
 using namespace std;
@@ -19,11 +20,22 @@ void SettingsManager::showSettings() const {
 }
 
 void SettingsManager::changeSetting(const string& key, const string& value) {
-    if (settings.find(key) != settings.end()) {
-        settings[key] = value;
+    // Convert input key to match case of stored keys
+    string formattedKey = key;
+    formattedKey[0] = toupper(formattedKey[0]);
+    for (size_t i = 1; i < formattedKey.length(); ++i) {
+        formattedKey[i] = tolower(formattedKey[i]);
+    }
+
+    if (settings.find(formattedKey) != settings.end()) {
+        settings[formattedKey] = value;
         cout << "Setting updated!\n";
     } else {
-        cout << "Invalid setting key!\n";
+        cout << "Invalid setting key!\nAvailable keys: ";
+        for (const auto& s : settings) {
+            cout << s.first << " ";
+        }
+        cout << endl;
     }
 }
 

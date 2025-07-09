@@ -1,0 +1,3 @@
+Brightness=70
+Language=tamil
+Volume=50
